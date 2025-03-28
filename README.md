@@ -1,7 +1,7 @@
 # ClickTool/连点器
 连点器
 
-![](.\\gui.png)
+![](https://github.com/Clever530/ClickTool/blob/main/gui.png)
 
 
 可以进行窗口置顶 默认为置顶状态（按钮显示取消置顶）
