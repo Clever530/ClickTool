@@ -15,3 +15,17 @@
 重置按钮重置对应行按键
 
 下崽儿连接：[ClickTool.exe](https://github.com/Clever530/ClickTool/releases/download/v1.0.0/ClickTool.exe)
+
+
+或者直接克隆项目
+```
+git clone https://github.com/Clever530/ClickTool.git
+```
+安装依赖
+```python
+pip install requirements.txt -r
+```
+连点器，启动！
+```python
+python ClickTool.py
+```
