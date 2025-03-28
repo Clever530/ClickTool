@@ -11,3 +11,5 @@
 点击目标按键胖按钮设置连点按键 默认为鼠标左键
 
 重置按钮重置对应行按键
+
+下崽儿连接：[ClickTool.exe](https://github.com/Clever530/ClickTool/releases/download/v1.0.0/ClickTool.exe)
