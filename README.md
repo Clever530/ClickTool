@@ -1,7 +1,7 @@
 # ClickTool/连点器
 当想用连点器的时候发现没有，于是写了个连点器，写完了发现G502带鼠标宏可以调，我甚至还调过了，乐了
 
-发上来给帮助没有鼠标宏的人
+发上来帮助没有鼠标宏的人
 
 ![image](https://github.com/Clever530/ClickTool/blob/main/gui.png)
 
