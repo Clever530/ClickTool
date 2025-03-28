@@ -1,8 +1,9 @@
 # ClickTool/连点器
-连点器
+当想用连点器的时候发现没有，于是写了个连点器，写完了发现G502带鼠标宏可以调，我甚至还调过了，乐了
+
+发上来给帮助没有鼠标宏的人
 
 ![image](https://github.com/Clever530/ClickTool/blob/main/gui.png)
-
 
 可以进行窗口置顶 默认为置顶状态（按钮显示取消置顶）
 
@@ -17,6 +18,8 @@
 下崽儿连接：[ClickTool.exe](https://github.com/Clever530/ClickTool/releases/download/v1.0.0/ClickTool.exe)
 
 
+如果有python环境建议直接clone
+（不会压缩大小默默说到QAQ）
 或者直接克隆项目
 ```
 git clone https://github.com/Clever530/ClickTool.git
