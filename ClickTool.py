@@ -184,6 +184,13 @@ class MouseClicker:
         self.listening = True  # 标记正在监听
         self.target_button_button.config(text="_", state="disabled")  # 按钮显示为下划线并禁用
 
+        def stop_listening():
+            """停止键盘和鼠标的监听"""
+            self.listening = False
+            self.target_button_button.config(state="normal")  # 恢复按钮状态
+            keyboard.unhook(on_key_event)
+            mouse.unhook(on_mouse_event)
+
         def on_key_event(event):
             try:
                 self.target_button = event.name
@@ -191,9 +198,7 @@ class MouseClicker:
             except Exception as e:
                 messagebox.showerror("错误", f"无法设置目标按键: {e}")
             finally:
-                self.listening = False  # 监听结束
-                self.target_button_button.config(state="normal")  # 恢复按钮状态
-                keyboard.unhook(on_key_event)  # 停止键盘监听
+                stop_listening()  # 停止监听
 
         def on_mouse_event(event):
             try:
@@ -203,11 +208,9 @@ class MouseClicker:
             except Exception as e:
                 messagebox.showerror("错误", f"无法设置目标按键: {e}")
             finally:
-                self.listening = False  # 监听结束
-                self.target_button_button.config(state="normal")  # 恢复按钮状态
-                mouse.unhook(on_mouse_event)  # 停止鼠标监听
+                stop_listening()  # 停止监听
 
-        # 监听键盘和鼠标事件
+        # 同时监听键盘和鼠标事件
         keyboard.hook(on_key_event)
         mouse.hook(on_mouse_event)
 
